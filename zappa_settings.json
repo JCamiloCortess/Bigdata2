@@ -1,0 +1,21 @@
+
+{
+    "dev": {
+        "app_function": "casas.a",
+        "aws_region": "us-east-1",
+        "project_name": "Bigdata2",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa-vlpqp2365",
+        "apigateway_enabled": false,
+        "manage_roles": false,
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "events": [
+            {
+                "function": "casas.py",
+                "expression": "cron(15 6 ? * THU *)"
+            },
+            
+        ] 
+    }
+}
